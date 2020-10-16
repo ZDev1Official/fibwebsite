@@ -1,0 +1,19 @@
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body{
+  background: lightblue;
+  text-align: center;
+}
+
+#fibonacci2{
+  font-size: 50px;
+}
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: blue;
+}

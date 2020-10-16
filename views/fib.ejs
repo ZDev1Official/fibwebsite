@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title id="fibonacci"></title>
+</head>
+<body>
+  <script>
+    let number = "<%= fib %>";
+    function f(n){
+      if(n <= 1) return 1;
+      return f(n - 2) + f(n - 1);
+    }
+    function display(){
+      document.getElementById('fibonacci').innerHTML = 'Fibonacci is: ' + f(number);
+      document.getElementById('fibonacci2').innerHTML = f(number).toString();
+      document.getElementById('btn').style.display = "none";
+      document.getElementById('lnk').style.display = "block";
+    }
+  </script>
+
+  <h1>Fibonacci is done!</h1>
+  <br>
+  <br>
+  <br>
+  <b><div> <var id="fibonacci2"></var></div></b>
+  <br>
+  <button id="btn" onclick="display()">Click to display fibonacci</button>
+  <br>
+  <a href="/" style="display: none;" id="lnk">Back to homepage</a>
+</body>
+</html>
